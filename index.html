@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pomodoro Timer</title>
+    <style>
+        #startButton {
+            background-color: darkseagreen;
+        }
+
+        #stopButton {
+            background-color: coral;
+        }
+
+        #resetButton {
+            background-color: beige;
+        }
+
+        #mySubmit {
+            background-color:pink
+        }
+
+        #myTime {
+            background-color: pink;
+        }
+
+        body {
+            background-color:rgb(255, 232, 232);
+        }
+
+        button {
+            width: 70px;
+            height: 35px;
+            border-radius: 15px;
+        }
+
+        input {
+            height: 30px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pomodoro Timer</h1>
+    <label>How long do you need this session to be?</label><br><br>
+    <input id="myTime">
+    <button id="mySubmit">Submit</button>
+    
+    <h1 id="time">00:00</h1>
+    <button id="startButton" onclick="startClock()">Start</button>
+    <button id="stopButton" onclick="stopClock()">Stop</button>
+    <button id="resetButton" onclick="resetClock()">Reset</button>
+    <h3 id="doneMessage"></h3>
+
+    <script src="index.js"></script>
+</body>
+</html>
